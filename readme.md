@@ -8,7 +8,6 @@ WHERE Salary > 1000 AND Salary < 2000;
 The idea was to the usethe `WHERE` for conditional clause.
 Alternative Could have started with the first range or command which is salary select salary that is above 1000 and the second command would be to select salary that is below 2000 and extract  the ones that fit the criteria. If the salary data could have included nulls, we can filter that out.
 
-
 ### Query 2:Count the number of employees in department 30 who have both a salary and a commission.
 SELECT COUNT(*) AS EmployeeCount
 FROM Employees
@@ -25,8 +24,6 @@ FROM Employees
 WHERE Salary >= 1000 AND City = 'Dallas';
 This combines two filters on salary and city using the `AND` operator.
 Alternative Approach: For case-insensitive city matches, the condition could be modified to use `LOWER(City) = 'dallas'`.
-
----
 
 ### Query 4: Departments with No Current Employees
 To Identify departments that currently have no employees assigned.
